@@ -84,7 +84,7 @@ def load_users():
         # Step 3 - Insert/update records
         # ----------------------------
         merge_sql = text("""
-            MERGE ApiUsers AS target
+            MERGE dbo.dummy_users AS target
 
             USING (
                 SELECT
